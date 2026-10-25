@@ -36,14 +36,16 @@ Python · pandas · numpy · scipy.stats（z 检验 / t 检验 / Mann-Whitney U 
 
 ## 图表
 
-| 图 | 说明 |
-| --- | --- |
-| power_curve.png | MDE 越小样本量越大，1pp 对应每组 12208 人 |
-| conversion_ci.png | 两个主指标的效应量 + 置信区间 |
-| segment_effects.png | 分群效应森林图，Web/老用户置信区间跨 0 |
-| peeking_curve.png | 累计 p 值随天数波动 |
+图都在 reports/figures/ 下：
+
+- power_curve.png：MDE 越小样本量越大，1pp 对应每组 12208 人
+- conversion_ci.png：两个主指标的效应量 + 置信区间
+- segment_effects.png：分群效应森林图，Web/老用户置信区间跨 0
+- peeking_curve.png：累计 p 值随天数波动
 
 ## 快速开始
+
+命令按顺序跑就行，中间报错八成是依赖没装全：
 
 ```bash
 pip install -r requirements.txt

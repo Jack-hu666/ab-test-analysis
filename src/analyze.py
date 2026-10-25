@@ -64,7 +64,7 @@ def amount_test(ctrl, trt):
         method = "Mann-Whitney U 检验（非正态，非参数）"
         stat, p = stats.mannwhitneyu(ctrl, trt, alternative="two-sided")
 
-    # 效应量：相对提升 + bootstrap 95% CI
+    # 效应量：相对提升 + bootstrap 95% CI（其实跑 1000 次也够，懒得调了）
     rel = (trt.mean() - ctrl.mean()) / ctrl.mean()
     rng = np.random.default_rng(0)
     diffs = []
